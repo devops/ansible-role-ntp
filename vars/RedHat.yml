@@ -1,0 +1,5 @@
+---
+# file: roles/ntp/vars/RedHat.yml
+# vars file for RedHat
+
+ntp_daemon: ntpd

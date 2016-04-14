@@ -1,0 +1,15 @@
+restrict default kod nomodify notrap nopeer noquery
+restrict -6 default kod nomodify notrap nopeer noquery
+
+restrict 127.0.0.1
+restrict -6 ::1
+
+{% for server in ntp_servers %}
+server {{ server }}
+{% endfor %}
+
+fudge 127.127.1.0 stratum 10
+
+driftfile /var/lib/ntp/drift
+includefile /etc/ntp/crypto/pw
+keys /etc/ntp/keys

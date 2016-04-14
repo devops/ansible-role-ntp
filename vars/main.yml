@@ -1,0 +1,3 @@
+---
+# file: roles/ntp/vars/main.yml    
+# vars file for ntp

@@ -1,0 +1,11 @@
+---
+# file: roles/ntp/defaults/main.yml
+# defaults file for ntp
+
+ntp_enabled: true
+ntp_timezone: Asia/Shanghai
+
+ntp_servers:
+  - ntp.fudan.edu.cn prefer
+  - ntp.api.bz
+  - 127.127.1.0
